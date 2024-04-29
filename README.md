@@ -43,7 +43,7 @@ except Exception as e:
 
 ## Output:
 
-![ai8](https://github.com/Ishu-Vasanth/Ex-8--AAI/assets/94154614/ffe0efd8-a2c2-487f-9bc8-2649c8dfa703)
+![aai](https://github.com/Ishu-Vasanth/Ex-8--AAI/assets/94154614/62ed02f8-0386-474b-a5d1-8ebc89d22cf9)
 
 ## Result:
 Thus, the python program for Speech Recognition is implemented successfully.
