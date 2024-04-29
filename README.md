@@ -22,7 +22,7 @@ Step 11: Perform speech recognition with exceptional handling:<Br>
 •	Handle specific exceptions: If the recognition result is unknown or if there is an issue with the request to the Google Speech Recognition service, print corresponding error messages.<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
 
-<H3>Program:</H3>
+## Program:
 ```
 import speech_recognition as sr
 r = sr.Recognizer()
@@ -41,9 +41,9 @@ except Exception as e:
     print(f'Error : {e}')
 ```
 
-<H3> Output:</H3>
+## Output:
 
 ![ai8](https://github.com/Ishu-Vasanth/Ex-8--AAI/assets/94154614/ffe0efd8-a2c2-487f-9bc8-2649c8dfa703)
 
-<H3> Result:</H3>
+## Result:
 Thus, the python program for Speech Recognition is implemented successfully.
