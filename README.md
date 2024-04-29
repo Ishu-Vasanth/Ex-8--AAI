@@ -1,10 +1,11 @@
- <H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: ISHWARYA V</H3>
+<H3>ENTER YOUR REGISTER NO: 212221240016</H3>
 <H3>EX. NO.8</H3>
-<H3>DATE:</H3>
+<H3>DATE:29/04/2024</H3>
 <H1 ALIGN =CENTER>Implementation of Speech Recognition</H1>
 <H3>Aim:</H3> 
  To implement the conversion of live speech to text.<BR>
+ 
 <h3>Algorithm:</h3>
 Step 1: Import the speech_recognition library<Br>
 Step 2: Initialize the Recognizer<Br>
@@ -20,11 +21,29 @@ Step 11: Perform speech recognition with exceptional handling:<Br>
 •	If successful, print the recognized text.<Br>
 •	Handle specific exceptions: If the recognition result is unknown or if there is an issue with the request to the Google Speech Recognition service, print corresponding error messages.<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
-<H3>Program:</H3>
 
-Insert your code her
+<H3>Program:</H3>
+```
+import speech_recognition as sr
+r = sr.Recognizer()
+duration = 30
+print("Say something")
+with sr.Microphone() as source:
+    audio_data = r.listen(source,timeout=duration)
+
+try:
+    text= r.recognize_google(audio_data)
+except sr.UnknownValueError:
+    print("Sorry, couldn't understand the audio")
+except sr.RequestError as e:
+    print(f'Error with request tp Google Speech Recognition service: {e}')
+except Exception as e:
+    print(f'Error : {e}')
+```
 
 <H3> Output:</H3>
-Show the results here
+
+![ai8](https://github.com/Ishu-Vasanth/Ex-8--AAI/assets/94154614/ffe0efd8-a2c2-487f-9bc8-2649c8dfa703)
 
 <H3> Result:</H3>
+Thus, the python program for Speech Recognition is implemented successfully.
